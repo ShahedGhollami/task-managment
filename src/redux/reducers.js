@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
-import ConactForm from './Task/reducer';
+import Task from './Task/reducer';
+import Section from './Section/reducer';
 export default combineReducers({
-    ConactForm
+    Task,Section
 });

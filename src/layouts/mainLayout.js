@@ -24,7 +24,7 @@ const MainLayout =(props)=> {
                         <div className="content">
                             <Container fluid>
                                 <Suspense fallback={loading()}>
-                                    {(props.ConactForm.loading ) &&<LoaderPage />}
+                                    {(props.Section.loading || props.Task.loading  ) &&<LoaderPage />}
                                     <Alert />
                                     {children}
                                 </Suspense>
@@ -42,7 +42,8 @@ const MainLayout =(props)=> {
 
 const mapStateToProps = state => {
     return {
-        ConactForm: state.ConactForm,
+        Task: state.Task,
+        Section: state.Section,
       
     };
 }

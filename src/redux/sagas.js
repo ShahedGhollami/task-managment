@@ -1,7 +1,8 @@
 import { all } from 'redux-saga/effects';
-import ConactForm from './Task/saga';
+import Task from './Task/saga';
+import Section from './Section/saga';
 export default function* rootSaga(getState) {
     yield all([
-        ConactForm()
+        Section(),Task()
     ]);
 }
