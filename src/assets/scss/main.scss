@@ -1,6 +1,57 @@
-.bg_666{
-    background-color: $_666;
+.bg_ccc{
+    background-color: $_ccc;
 }
 .h100{
     height: 100vh;
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.flexbox .board {
+    margin-right: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    width: 300px;
+    //padding: 15px;
+}
+.flexbox .board .card {
+    padding: 15px 25px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 5px;
+}
+.vh64 {
+    min-height: 64vh !important;
+}
+.vh80 {
+    max-height: 80vh !important;
+}
+.overflow-x-auto {
+    overflow-x: auto !important;
+}
+.border-radius5 {
+    border-radius: 5px;
+}
+.overflow-Y-outo {
+    overflow-y: auto;
+}
+.overflow-X-hide {
+    overflow-x: hidden;
+}
+.border-radius5-top {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.txt_bg {
+    color: $txt_color;
+    background-color: $txt_background-color;
+    border: $txt_border;
+}
+.border-solid {
+    border: 1px solid #ccc;
 }

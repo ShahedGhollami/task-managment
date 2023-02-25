@@ -36,10 +36,8 @@ const AddSection = (props) => {
         </Modal>
     )
 }
-const mapStateToProps = (state) => {
-   
+const mapStateToProps = (state) => {   
     const { SectionList } = state.Section;
     return { SectionList };
 };
-
 export default connect(mapStateToProps, {  AddNewSection})(AddSection);

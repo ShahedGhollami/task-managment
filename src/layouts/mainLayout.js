@@ -24,7 +24,7 @@ const MainLayout =(props)=> {
                         <div className="content">
                             <Container fluid>
                                 <Suspense fallback={loading()}>
-                                    {(props.Section.loading || props.Task.loading  ) &&<LoaderPage />}
+                                    {(props.Section.loading) &&<LoaderPage />}
                                     <Alert />
                                     {children}
                                 </Suspense>
@@ -42,9 +42,7 @@ const MainLayout =(props)=> {
 
 const mapStateToProps = state => {
     return {
-        Task: state.Task,
-        Section: state.Section,
-      
+        Section: state.Section      
     };
 }
 export default connect(mapStateToProps, { })(MainLayout);
